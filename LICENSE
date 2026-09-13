@@ -1,0 +1,160 @@
+D.R.O.N.E. - END USER LICENCE AGREEMENT
+Dedicated RCON, Operations & Native Execution
+Copyright (c) 2026 Saecke ("the Licensor"). All rights reserved.
+
+This licence governs the D.R.O.N.E. binary distribution. It does not grant any
+right to the source code, which is not published.
+The German version below is the authoritative text.
+
+--------------------------------------------------------------------------
+ENGLISH
+--------------------------------------------------------------------------
+
+1. SUBJECT
+   This agreement covers the files distributed by the Licensor as part of
+   D.R.O.N.E.: the mod binary (main.dll), its configuration examples, the
+   accompanying documentation, and the supplied tools (rc.py,
+   befehle_testen.py, the web panel). Third-party components are governed by
+   clause 8 and are not subject to this agreement.
+
+2. GRANT OF USE
+   The Licensor grants you a free, non-exclusive, worldwide right to install
+   and run the software on any number of game servers, private or public.
+   This expressly includes servers that finance themselves through donations,
+   VIP memberships, or comparable player contributions. You may make backup
+   copies.
+
+3. RESTRICTIONS
+   You may not:
+   a) sell, rent, lease, sublicense or otherwise commercialise the software
+      itself, nor offer it as a paid product or as part of a paid service
+      (for example a paid server-setup or hosting package in which the
+      software is a billed component);
+   b) modify the software, create derivative works, or decompile,
+      disassemble or otherwise reverse engineer it, to the extent permitted
+      by applicable law. Mandatory rights under Art. 6 of Directive
+      2009/24/EC and Sections 69d, 69e UrhG (decompilation for
+      interoperability, error correction, backup) remain unaffected;
+   c) redistribute the software outside the official release channel. Link
+      to the official releases instead of rehosting them;
+   d) remove or alter copyright notices, licence texts or checksums.
+
+4. OWNERSHIP
+   The software is licensed, not sold. All rights not expressly granted
+   remain with the Licensor.
+
+5. NO WARRANTY
+   The software is provided "AS IS", without warranty of any kind, express
+   or implied, including but not limited to fitness for a particular
+   purpose. The Licensor does not warrant uninterrupted or error-free
+   operation. The software patches a running game server process; you are
+   responsible for your own backups.
+
+6. LIABILITY
+   The Licensor is liable without limitation for intent and gross
+   negligence, and for injury to life, body or health. Any further liability
+   is excluded to the extent permitted by law. The software is provided free
+   of charge; Section 521 BGB applies.
+
+7. TERM
+   This licence terminates automatically if you breach clause 3. Upon
+   termination you must cease all use and delete all copies.
+
+8. THIRD-PARTY COMPONENTS
+   The distribution bundles UE4SS (Copyright (c) 2022 Narknon), licensed
+   under the MIT Licence; its licence text is included as
+   Win64\ue4ss\LICENSE. The loader dwmapi.dll is an unmodified official
+   build. These components keep their own licences, which this agreement
+   neither restricts nor replaces.
+
+9. NO AFFILIATION
+   D.R.O.N.E. is an independent, unofficial modification. It is not
+   affiliated with, endorsed by, or sponsored by the developers, the
+   publisher, or any other rights holder of SCUM. All trademarks belong to
+   their owners.
+
+10. GOVERNING LAW
+    German law applies, excluding the UN Convention on Contracts for the
+    International Sale of Goods. If any provision is or becomes invalid, the
+    remainder stays in force.
+
+--------------------------------------------------------------------------
+DEUTSCH (maßgeblich)
+--------------------------------------------------------------------------
+
+1. GEGENSTAND
+   Diese Vereinbarung gilt für die vom Rechtsinhaber als D.R.O.N.E.
+   ausgelieferten Dateien: die Mod-Binärdatei (main.dll), ihre
+   Konfigurationsbeispiele, die beiliegende Dokumentation und die
+   mitgelieferten Werkzeuge (rc.py, befehle_testen.py, das Web-Panel).
+   Komponenten Dritter regelt Ziffer 8; sie unterliegen dieser Vereinbarung
+   nicht.
+
+2. NUTZUNGSRECHT
+   Der Rechtsinhaber räumt Ihnen ein unentgeltliches, einfaches, weltweites
+   Recht ein, die Software auf beliebig vielen Spielservern zu installieren
+   und zu betreiben, privat wie öffentlich. Das schließt ausdrücklich
+   Server ein, die sich über Spenden, VIP-Mitgliedschaften oder
+   vergleichbare Spielerbeiträge finanzieren. Sicherungskopien sind
+   zulässig.
+
+3. BESCHRÄNKUNGEN
+   Untersagt ist:
+   a) die Software selbst zu verkaufen, zu vermieten, zu verleasen,
+      unterzulizenzieren oder anderweitig zu vermarkten, sowie sie als
+      kostenpflichtiges Produkt oder als Teil einer kostenpflichtigen
+      Leistung anzubieten (etwa ein bezahltes Server-Setup- oder
+      Hosting-Paket, in dem die Software ein berechneter Bestandteil ist);
+   b) die Software zu verändern, zu bearbeiten, zu dekompilieren, zu
+      disassemblieren oder anderweitig zurückzuentwickeln, soweit
+      gesetzlich zulässig. Zwingende Rechte nach Artikel 6 der Richtlinie
+      2009/24/EG und den Paragraphen 69d, 69e UrhG (Dekompilierung zur
+      Herstellung der Interoperabilität, Fehlerberichtigung,
+      Sicherungskopie) bleiben unberührt;
+   c) die Software außerhalb des offiziellen Auslieferungskanals
+      weiterzuverbreiten. Verlinken Sie die offiziellen Releases, statt sie
+      erneut zu hosten;
+   d) Urhebervermerke, Lizenztexte oder Prüfsummen zu entfernen oder zu
+      verändern.
+
+4. RECHTEINHABERSCHAFT
+   Die Software wird lizenziert, nicht verkauft. Alle nicht ausdrücklich
+   eingeräumten Rechte verbleiben beim Rechtsinhaber.
+
+5. KEINE GEWÄHRLEISTUNG
+   Die Software wird "WIE BESEHEN" überlassen, ohne jede ausdrückliche
+   oder stillschweigende Gewährleistung, insbesondere ohne Zusicherung der
+   Eignung für einen bestimmten Zweck. Ein unterbrechungs- oder
+   fehlerfreier Betrieb wird nicht zugesichert. Die Software greift in einen
+   laufenden Spielserverprozess ein; für eigene Sicherungen sind Sie
+   verantwortlich.
+
+6. HAFTUNG
+   Der Rechtsinhaber haftet unbeschränkt für Vorsatz und grobe
+   Fahrlässigkeit sowie für Schäden aus der Verletzung des Lebens, des
+   Körpers oder der Gesundheit. Eine weitergehende Haftung ist
+   ausgeschlossen, soweit gesetzlich zulässig. Die Überlassung erfolgt
+   unentgeltlich; Paragraph 521 BGB gilt.
+
+7. LAUFZEIT
+   Diese Lizenz endet automatisch, wenn Sie gegen Ziffer 3 verstoßen. Mit
+   Beendigung ist jede Nutzung einzustellen und jede Kopie zu löschen.
+
+8. KOMPONENTEN DRITTER
+   Der Auslieferung liegt UE4SS bei (Copyright (c) 2022 Narknon), lizenziert
+   unter der MIT-Lizenz; ihr Lizenztext liegt als Win64\ue4ss\LICENSE bei.
+   Der Lader dwmapi.dll ist ein unveränderter offizieller Build. Diese
+   Komponenten behalten ihre eigenen Lizenzen, die diese Vereinbarung weder
+   einschränkt noch ersetzt.
+
+9. KEINE VERBINDUNG
+   D.R.O.N.E. ist eine unabhängige, inoffizielle Modifikation. Es besteht
+   keine Verbindung zu den Entwicklern, dem Herausgeber oder sonstigen
+   Rechteinhabern von SCUM; eine Befürwortung oder Förderung durch diese
+   liegt nicht vor.
+   Alle Marken gehören ihren jeweiligen Inhabern.
+
+10. RECHTSWAHL
+    Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts. Sollte eine
+    Bestimmung unwirksam sein oder werden, bleibt der übrige Vertrag
+    wirksam.
