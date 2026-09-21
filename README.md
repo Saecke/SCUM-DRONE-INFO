@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-0.4.1-brightgreen" alt="Version 0.4.1">
+  <img src="https://img.shields.io/badge/Version-0.6.0-brightgreen" alt="Version 0.6.0">
   <img src="https://img.shields.io/badge/Status-Testfassung-orange" alt="Status: Testfassung">
   <a href="LICENSE"><img src="https://img.shields.io/badge/Lizenz-free--to--use%20EULA-blue" alt="Lizenz"></a>
   <img src="https://img.shields.io/badge/Plattform-Windows%20x64-lightgrey" alt="Plattform: Windows x64">
@@ -70,6 +70,8 @@ Teleports funktionieren auch nachts um vier, wenn niemand eingeloggt ist.
 - **Serverregeln zur Laufzeit ändern**, ohne Neustart. Dazu Survival-Regler,
   Strahlenzonen, Zeit und Wetter.
 - **Handelstabelle lesen**: was welcher Händler führt.
+- **Ingame-Uhrzeit und Quest-Reset abfragen**, für Bots und auf Wunsch auch
+  für Spieler im Chat.
 
 ### Was von allein läuft
 
@@ -82,6 +84,9 @@ Eingriffe ins Spiel sind ab Werk aus. Wer nichts einschaltet, merkt nichts.
   steht in einer einfachen Textdatei.
 - **Generatoren, die nie leer werden.** Für Handelsposten, Com-Zone und
   Eventgelände.
+- **Nachts andere Regeln**, zum Beispiel schnellere Zombies, mit sanftem
+  Übergang bei Sonnenuntergang und -aufgang.
+- **Obergrenzen des Spiels anheben**, etwa für mehr Rager, als SCUM erlaubt.
 - **Türen, die sich von selbst schließen**, je Türsorte wählbar.
 - **Genähte Kleidung sieht wieder neu aus.** Normaler Verschleiß bleibt sichtbar.
 - **Abreißen in der eigenen Squad-Base ab wählbarem Rang**, statt nur für
@@ -91,7 +96,8 @@ Eingriffe ins Spiel sind ab Werk aus. Wer nichts einschaltet, merkt nichts.
 - **Updates ohne Serverhalt.** Neue Version bei laufendem Server ablegen, die
   Mod prüft und übernimmt sie beim nächsten Neustart.
 - **Konfigurator im Browser**, ohne Server und ohne Internet.
-- **Sessionlog** pro Serverlauf.
+- **Sessionlog** pro Serverlauf, auf Wunsch mit den Downloads an den
+  Bunker-Terminals. Dazu ein Inventar- und Leichen-Log. **Experimentell.**
 
 Alles im Detail: **[FUNKTIONEN.md](FUNKTIONEN.md)**.
 

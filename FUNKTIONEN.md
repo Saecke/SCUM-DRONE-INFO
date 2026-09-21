@@ -4,7 +4,7 @@ Die vollständige Funktionsliste, nach Themen sortiert. Das hier beschreibt,
 **was** die Mod tut. Wie man sie bedient und einrichtet, steht in der
 Anleitung, die dem Paket beiliegt.
 
-Stand: Version 0.4.1.
+Stand: Version 0.6.0.
 
 ---
 
@@ -58,6 +58,7 @@ Stand: Version 0.4.1.
 ## Fahrzeuge
 
 - **Alle Fahrzeuge auflisten** mit ID, Typ, Position und Besitzer.
+- **Die Fahrzeuge eines Spielers auflisten**, über Namen oder SteamID.
 - **Ein Fahrzeug zum Spieler holen.** Das kann SCUM selbst nicht, nur den
   Spieler zum Fahrzeug.
 - **Ein Fahrzeug an Koordinaten setzen.** Die Höhe wird vorher geprüft, ein
@@ -96,6 +97,8 @@ Stand: Version 0.4.1.
 ## Welt und Regeln
 
 - **Zeit, Zeitgeschwindigkeit, Wetter, Nebel** stellen.
+- **Ingame-Uhrzeit abfragen**, sekundengenau aus dem laufenden Server: eine
+  Zeile für Menschen, eine für Bots. Auch während der Server noch startet.
 - **Survival-Regler** zur Laufzeit: wie schnell Spieler dreckig oder nass
   werden, wie schnell Schuhe verschleißen, wie schnell Kleidung trocknet, und
   mehr. Als Faktor auf das normale Spiel, jederzeit zurücksetzbar.
@@ -108,6 +111,10 @@ Stand: Version 0.4.1.
   lässt sich zum Beispiel klären, warum ein Spieler etwas nirgends verkaufen
   kann.
 
+- **Obergrenzen von Servereinstellungen anheben.** Manche Werte deckelt der
+  Server beim Start stillschweigend, etwa die Zahl der Rager. Mit der Mod
+  bleibt der eingetragene Wert stehen.
+
 ## Server und Moderation
 
 - **Kicken, bannen, entbannen, stummschalten, Chatverbot auf Zeit.**
@@ -116,6 +123,12 @@ Stand: Version 0.4.1.
 - **Server herunterfahren**, mit Ansage davor.
 - **Sessionlog** pro Serverlauf, im Logordner von SCUM: jeder Befehl mit
   Zeitstempel und Antwort.
+- **Bunker-Terminals**: wer zuletzt an den Terminals der Abandoned Bunker
+  Daten geladen hat, mit Restsperre. Auf Wunsch steht jeder Download im
+  Sessionlog.
+- **Inventar- und Leichen-Log**: wer welchen Behälter öffnet, mit Besitzer und
+  Ort; Leichen von Spielern sind mit dem Namen des Toten markiert. Nur
+  mitschreiben, nichts sperren. **Experimentell**, ab Werk aus.
 - **Diagnose**: lebt die Mod, ist alles bereit, was kostet welcher Befehl.
 
 ## Quests
@@ -123,6 +136,7 @@ Stand: Version 0.4.1.
 - **Ausgesperrte Spieler wieder hereinlassen.** Manche Quests werfen den
   Spieler beim Login vom Server, bevor er sie abbrechen kann. Die Mod findet
   diese Spieler, befreit einen oder alle, und sichert vorher, was sie löscht.
+- **Zeit bis zum Quest-Reset** abfragen, per Verbindung und im Spielchat.
 
 ## Rechte
 
@@ -134,6 +148,9 @@ Stand: Version 0.4.1.
 - **Dev-Rechte ohne Datenbankeingriff.** Welche Spieler erweiterte Befehle
   nutzen dürfen, steht in einer einfachen Textdatei. Die Mod trägt es beim
   Serverstart ein.
+- **Befehle für alle Spieler freigeben.** Ab Werk dürfen nur Admins die
+  Befehle der Mod im Chat nutzen. Die lesenden (Uhrzeit, Quest-Reset) lassen
+  sich für jeden Spieler öffnen.
 - **Anzeigen, wer was darf**, und neu einlesen ohne Neustart.
 
 ## Was von allein läuft
@@ -151,6 +168,9 @@ Alles hier ist ab Werk aus. Wer nichts einschaltet, merkt nichts.
 - **Abreißen in der eigenen Squad-Base ab wählbarem Rang.** Seit einem
   SCUM-Update dürfen nur noch Underboss und Boss Bauteile wegnehmen. Mit der
   Mod geht es wieder ab dem Rang, den der Betreiber wählt.
+- **Nachts andere Regeln.** Spielwerte wie Tempo, Leben oder Schaden der
+  Zombies ab Sonnenuntergang anders setzen. Die Mod fährt sie schrittweise hoch
+  und bei Sonnenaufgang genauso zurück auf den Tagwert.
 - **Updates ohne Serverhalt.** Neue Version bei laufendem Server ablegen, die
   Mod prüft die Prüfsummen, übernimmt die Dateien, ergänzt neue Einstellungen
   und archiviert, was sie ersetzt hat. Geladen wird beim nächsten Neustart.
