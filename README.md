@@ -111,8 +111,9 @@ braucht dafür keine neue Version der Mod.
 
 - **Quer durch das Spiel**: wie schnell Spieler laufen, ob Türen von selbst
   zufallen, wie weit eine Granate wirkt, wie stark der Bunker bei Alarm
-  nachlegt, wie schnell Wasser in die Kleidung zieht, wie lange ein Autowrack
-  liegen bleibt. Über hundert Bereiche, zusammen weit über tausend Einzelwerte.
+  nachlegt, wie viel Wasser ein Gartenfeld fasst und wie viel ein Regen davon
+  bringt, wie lange ein Autowrack liegen bleibt. Über hundert Bereiche,
+  zusammen weit über tausend Einzelwerte.
 - **Absolut oder als Anteil.** "Spieler laufen zehn Prozent schneller" lässt
   sich hinschreiben, ohne zu wissen, welche Zahl SCUM dafür führt.
 - **So breit oder so eng, wie du willst**: alle Türen einer Bauart auf einmal,

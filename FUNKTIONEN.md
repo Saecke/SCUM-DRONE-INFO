@@ -175,6 +175,7 @@ Was sich damit einstellen lässt, quer durch das Spiel:
 | Sprengstoff | Schaden und Radius von Granaten und Fallen |
 | Kleidung | wie schnell Wasser hineinzieht und wieder heraus |
 | Gerät | Kettensäge, Angelrute und was sonst Werte hat |
+| Gartenfelder | wie viel Wasser hineinpasst und wie viel ein Regen bringt |
 | Bunker | wie stark er bei Alarm nachlegt |
 
 - **Es ist kein Kasten mit zwanzig Schaltern.** Über hundert Bereiche des
@@ -199,6 +200,10 @@ Was sich damit einstellen lässt, quer durch das Spiel:
   Schule, Krankenhaus, Polizei, Kirche und die drei Garagentore: rund 4.600
   Türen, mit einstellbarer Zeit bis zum Zufallen.
 - **Fahrzeuge nach dem Neustart schneller in der Welt**, rund 7 Minuten statt 23.
+- **Gartenfelder, die mehr Wasser fassen.** Ab Werk hält ein Feld 4,75 Liter,
+  und ein Regen bringt davon 1,8 Liter. Beide Zahlen sind frei einstellbar: ein
+  Feld darf doppelt so viel fassen, und ein Regenguss darf es in einem Zug
+  volllaufen lassen, statt dreimal zu regnen.
 - **Einen Bunker, der bei Alarm härter zur Sache geht.**
 - **Schnellere Spieler**, oder langsamere.
 - **Mehr, als das Spiel zulässt.** Manche Zahlen in der `ServerSettings.ini`
