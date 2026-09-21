@@ -111,8 +111,8 @@ braucht dafür keine neue Version der Mod.
 
 - **Quer durch das Spiel**: wie schnell Spieler laufen, ob Türen von selbst
   zufallen, wie weit eine Granate wirkt, wie stark der Bunker bei Alarm
-  nachlegt, wie viel Wasser ein Gartenfeld fasst und wie viel ein Regen davon
-  bringt, wie lange ein Autowrack liegen bleibt. Über hundert Bereiche,
+  nachlegt, wie nass ein Gartenfeld werden darf und bis wohin der Regen es
+  füllt, wie lange ein Autowrack liegen bleibt. Über hundert Bereiche,
   zusammen weit über tausend Einzelwerte.
 - **Absolut oder als Anteil.** "Spieler laufen zehn Prozent schneller" lässt
   sich hinschreiben, ohne zu wissen, welche Zahl SCUM dafür führt.
