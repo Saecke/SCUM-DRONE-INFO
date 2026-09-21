@@ -87,18 +87,49 @@ wenn niemand eingeloggt ist.
 - **Kisten finden** über Name oder ID, samt Teleport eines Spielers dorthin.
 - **Spieler befreien**, die feststecken oder wegen einer Quest nicht mehr
   einloggen können.
-- **Serverregeln zur Laufzeit ändern**, ohne Neustart. Dazu Strahlenzonen,
-  Zeit und Wetter.
-- **Survival-Regler**: wie schnell Spieler dreckig oder nass werden, wie schnell
-  Kleidung trocknet, wie schnell Schuhe verschleißen.
-- **Spielwerte setzen, für die es keine Serveroption gibt**, etwa Tempo, Leben
-  und Schaden der Zombies, beim Start oder mitten im Betrieb.
+- **Serverregeln zur Laufzeit ändern**, ohne Neustart. Dazu Zeit und Wetter.
+- **Strahlenzonen**: alle 28 Quellen der Insel einzeln regeln - Reichweite,
+  Kern, Stärke, Verlauf - oder alle zusammen mit einem Faktor. Eine Zone
+  abschalten, damit die Stadt neben dem Kraftwerk wieder begehbar wird, und das
+  Kraftwerksgelände trotzdem gefährlich lassen.
+- **Survival-Regler**: sieben Faktoren dafür, wie hart das Überleben ist - wie
+  schnell Spieler dreckig oder nass werden, wie schnell Kleidung trocknet, wie
+  schnell Schuhe verschleißen, wie schnell die Füße wund werden.
 - **Regen, der die Felder nicht erreicht**, ohne Neustart wieder in Gang
   bringen.
 - **Handelstabelle lesen**: was welcher Händler führt.
 - **Ingame-Uhrzeit und Zeit bis zum Quest-Reset** abfragen.
 - **Generatoren um eine Flagge** auflisten, mit Füllstand.
 - **Bunker-Terminals**: wer zuletzt dort Daten geladen hat, mit Restsperre.
+
+### Die Stellschrauben
+
+Der größte Bereich, und der unscheinbarste. SCUM hält seine Spielregeln in
+Klassen mit Zahlenfeldern: wie schnell ein Gefangener läuft, wie lange eine Tür
+offen steht, wie weit eine Granate wirkt, wie oft der Bunker bei Alarm
+nachlegt. Die `ServerSettings.ini` gibt davon eine Handvoll heraus. **Die Mod
+gibt den Rest heraus** - mit einer Textzeile je Wert, ohne dass es dafür eine
+neue Version der Mod braucht.
+
+- **126 Klassen** sind im laufenden Server erreichbar, viele davon mit
+  hunderten setzbaren Feldern. Kein Katalog mit zwanzig Schaltern, sondern der
+  Zugang zu dem, was das Spiel ohnehin mitbringt.
+- **Absolut oder als Faktor.** "Spieler laufen zehn Prozent schneller" ist eine
+  Zeile, ohne dass man den Ausgangswert kennt.
+- **So breit oder so eng wie nötig**: alle Objekte einer Art, nur ein
+  Türmodell, oder genau ein einzelnes Objekt. Damit lässt sich zu einer
+  allgemeinen Regel eine Ausnahme formulieren.
+- **Beim Serverstart oder mitten im Betrieb**, und mit einem Befehl alles
+  zurück auf Auslieferungszustand. Ein verdrehter Wert kostet keinen Neustart.
+- **Mit Sicherungen**, weil so ein Zugang einen Server auch zerlegen kann: ein
+  Feld, das es nicht gibt, wird abgelehnt; gewinnt statt der Zeile eine Option
+  der `ServerSettings.ini`, kommt eine Warnung; der gesetzte Wert wird
+  nachgeprüft. Und es liegt eine geprüfte Liste bei, 184 Werte mit ihren
+  Auslieferungswerten daneben.
+
+Dazu die Konsolenvariablen der Engine, die Obergrenzen, die der Server beim
+Start stillschweigend deckelt, und ein Messwerkzeug, das die Türmodelle eines
+Servers nennt, statt sie raten zu lassen.
 
 ### Auch im Spielchat
 
@@ -129,6 +160,8 @@ Eingriffe ins Spiel sind ab Werk aus. Wer nichts einschaltet, merkt nichts.
   Underboss und Boss.
 - **Kisten-Sortierer**: räumt eine offene Kiste in die umstehenden Kisten,
   nach deren Namen. **Experimentell.**
+- **Ausgesperrte Spieler beim Serverstart befreien**, bevor sie sich das
+  nächste Mal verbinden.
 - **Updates ohne Serverhalt.** Neue Version bei laufendem Server ablegen, die
   Mod prüft und übernimmt sie beim nächsten Neustart.
 
@@ -140,6 +173,8 @@ Eingriffe ins Spiel sind ab Werk aus. Wer nichts einschaltet, merkt nichts.
   Ort. **Experimentell.**
 - **Konfigurator im Browser**, ohne Server und ohne Internet. Jede Einstellung
   ist dort erklärt.
+- **Web-Panel** als Konsole im Browser: Verlauf, Vervollständigung, klickbare
+  Ausgabe und eine Befehlsreferenz, die live aus dem Spiel kommt.
 - **Selbsttest**, der alle Befehle gegen den eigenen Server durchprobiert.
 - **Kommandozeilen-Client** zum Ausprobieren von Hand.
 - **Briefing für KI-Assistenten**: eine Datei, mit der ein Assistent den Server
