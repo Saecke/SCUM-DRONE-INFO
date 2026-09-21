@@ -122,10 +122,9 @@ Grund, warum die Stadt neben dem Kraftwerk niemand betritt.
   vom Kern zum Rand verläuft.
 - **Eine Zone abschalten**, ohne die anderen anzufassen. Oder umgekehrt eine
   kleine Zone auf ein ganzes Gelände ausweiten.
-- **Alle Zonen auf einmal**, mit einem Faktor statt einer Zahl: die
-  Verhältnisse zwischen den Zonen bleiben dabei erhalten. Der Faktor rechnet
-  immer auf den Stand vom Serverstart, zweimal die Hälfte ist also die Hälfte
-  und nicht ein Viertel.
+- **Alle Zonen auf einmal**, als Anteil statt als feste Zahl: "überall halb so
+  stark" geht in einer Zeile, und die Verhältnisse zwischen den Zonen bleiben
+  dabei erhalten.
 - **Zur Laufzeit, ohne Neustart.** Ein Befehl holt alle Zonen wieder auf den
   Stand vom Serverstart zurück.
 - **Dauerhaft in der Konfiguration**, mit denselben vier Reglern je Zone.
@@ -161,128 +160,62 @@ Neustart, und jederzeit komplett zurücksetzbar:
 
 ## Stellschrauben: Werte, für die es keine Serveroption gibt
 
-Das ist der größte Bereich der Mod und der, der am wenigsten nach einer
-Funktion aussieht. SCUM hält seine Spielregeln in Klassen mit Zahlenfeldern:
-wie schnell ein Gefangener läuft, wie lange eine Tür offen steht, wie weit eine
-Granate wirkt, wie oft der Bunker bei Alarm nachlegt. Die `ServerSettings.ini`
-gibt davon eine Handvoll heraus. **Die Mod gibt den Rest heraus - mit einer
-Textzeile je Wert, ohne dass es dafür eine neue Version der Mod braucht.**
+Die `ServerSettings.ini` gibt eine Handvoll Regler heraus. Die Mod gibt den Rest
+heraus: Werte, die SCUM fest eingebaut hat und an die sonst niemand herankommt.
+Je Wert eine Zeile, und es braucht dafür keine neue Version der Mod.
 
-### Was das an Umfang bedeutet
+Was sich damit einstellen lässt, quer durch das Spiel:
 
-Von 397 Klassen, die das Spiel im Programm führt, sind **126 im laufenden
-Server erreichbar** und haben jeweils mindestens drei setzbare Zahlenfelder.
-Viele haben erheblich mehr:
-
-| Klasse | setzbare Zahlenfelder | wovon sie handelt |
-|---|---|---|
-| Gefangener | 444 | alles am Spielercharakter |
-| Wachturm-Sentry | 222 | Sichtwinkel, Reaktion, Zielen |
-| Wetter | 190 | Tageszeit, Tempo des Tages, Höhenlagen |
-| Reh | 166 | Gangarten, Fluchtverhalten, Angriff |
-| Kleidung | 105 | Nässewanderung, Schaden beim Tragen |
-| Fahrzeug | 99 | gilt für rund 1.900 Fahrzeuge zugleich |
-
-Dazu Boote, Fahrräder, Angelruten, Granaten, Sprengfallen, Kettensägen,
-Dropship und Razor. Es ist kein fertiger Katalog mit zwanzig Schaltern, sondern
-ein Zugang zu dem, was das Spiel ohnehin an Werten mitbringt.
-
-### Wie ein Wert geschrieben wird
-
-Eine Zeile besteht aus Klasse, Feld und Wert. Für den Wert gibt es mehr als nur
-Zahlen:
-
-| Schreibweise | bedeutet |
+| Bereich | Beispiele |
 |---|---|
-| `80` | absolut dieser Wert |
-| `x1.1` | zehn Prozent mehr als ausgeliefert, ohne den Ausgangswert zu kennen |
-| `4..8` | ein Wertepaar, Min und Max |
-| Bool und Ganzzahl | ausdrücklich angesagt, damit nichts geraten wird |
+| Spieler | Lauftempo und alles andere an der Spielfigur |
+| Zombies, Tiere, Wächter | Tempo, Verhalten, wie weit sie sehen und hören |
+| Fahrzeuge und Boote | wie sie sich im Wasser verhalten, wie lange ein Wrack liegen bleibt |
+| Türen | ob sie von selbst zufallen und nach wie langer Zeit |
+| Sprengstoff | Schaden und Radius von Granaten und Fallen |
+| Kleidung | wie schnell Wasser hineinzieht und wieder heraus |
+| Gerät | Kettensäge, Angelrute und was sonst Werte hat |
+| Bunker | wie stark er bei Alarm nachlegt |
 
-Der **Faktor** ist der Alltagsfall: "Spieler laufen zehn Prozent schneller" ist
-eine Zeile, ohne dass man vorher nachsieht, welche Zahl dort steht. Die
-Schreibweise des Feldnamens ist dabei egal, Groß- und Kleinschreibung spielt
-keine Rolle.
+- **Es ist kein Kasten mit zwanzig Schaltern.** Über hundert Bereiche des
+  Spiels sind erreichbar, zusammen weit über tausend Einzelwerte. Allein an der
+  Spielfigur hängen mehrere hundert.
+- **Absolut oder als Anteil.** "Spieler laufen zehn Prozent schneller" lässt
+  sich hinschreiben, ohne zu wissen, welche Zahl SCUM dafür führt.
+- **So breit oder so eng, wie du willst.** Alle Türen einer Bauart auf einmal,
+  oder genau ein einzelnes Tor. Damit geht eine Regel für den ganzen Server und
+  daneben eine Ausnahme.
+- **Beim Serverstart oder mitten im Betrieb**, und mit einem Befehl alles zurück
+  auf Auslieferungszustand. Ein verdrehter Wert kostet keinen Neustart.
+- **Du läufst nicht ins Leere.** Ein Wert, den es so nicht gibt, wird abgelehnt
+  statt stillschweigend geschluckt. Wo eine Servereinstellung dasselbe regelt
+  und ohnehin gewinnen würde, sagt die Mod es dir. Und eine geprüfte Liste liegt
+  bei, damit niemand bei null anfangen muss.
 
-### Wen eine Zeile trifft
+### Was Betreiber damit machen
 
-Das ist der Punkt, an dem aus einer Bastelei ein Werkzeug wird. Die linke Seite
-darf verschieden weit greifen:
+- **Türen, die von selbst zufallen.** SCUM hat das eingebaut und fast überall
+  abgeschaltet. Eine fertige Vorlage liegt bei, für Wohnhäuser, Plattenbau,
+  Schule, Krankenhaus, Polizei, Kirche und die drei Garagentore: rund 4.600
+  Türen, mit einstellbarer Zeit bis zum Zufallen.
+- **Fahrzeuge nach dem Neustart schneller in der Welt**, rund 7 Minuten statt 23.
+- **Einen Bunker, der bei Alarm härter zur Sache geht.**
+- **Schnellere Spieler**, oder langsamere.
+- **Mehr, als das Spiel zulässt.** Manche Zahlen in der `ServerSettings.ini`
+  deckelt der Server beim Start stillschweigend, etwa die Menge der Rager. Der
+  eingetragene Wert steht dann zwar da, gilt aber nicht. Mit der Mod bleibt er
+  stehen.
 
-| linke Seite | trifft |
-|---|---|
-| eine Klasse | **alle** Objekte dieser Art auf dem Server |
-| eine Blueprint-Klasse | nur diese eine Bauart, etwa ein bestimmtes Türmodell |
-| ein einzelnes Objekt | **genau dieses eine**, sonst nichts |
+Und für die Türen gibt es Hilfe: die Mod zeigt, welche Türarten auf deinem
+Server überhaupt vorkommen und wie viele es davon gibt. Wenn du im Spiel die
+Türen aufmachst, um die es dir geht, nennt sie dir danach genau diese - statt
+dich aus 415 Bauarten raten zu lassen.
 
-Damit lässt sich eine allgemeine Regel aufstellen und daneben eine Ausnahme
-formulieren: alle Türen einer Bauart schließen sich, dieses eine Tor nicht.
+### Zombies live umstellen
 
-### Wann es greift
-
-- **Beim Serverstart**, wenn die Zeile in der Konfiguration steht.
-- **Mitten im Betrieb**, per Befehl, ohne Neustart und ohne dass ein Spieler
-  etwas merkt.
-- **Alles zurück auf Auslieferungszustand**, mit einem Befehl, ebenfalls ohne
-  Neustart. Ein verdrehter Wert ist damit kein Grund, den Server neu zu
-  starten.
-- **Anzeigen, was gewünscht ist und was tatsächlich anliegt**, nebeneinander.
-  Das ist der Unterschied zwischen "steht in der Datei" und "gilt gerade".
-
-### Was die Mod dagegen tut, dass man sich schadet
-
-Ein direkter Zugriff auf Spielwerte kann einen Server zerlegen. Deshalb sind
-vier Sicherungen eingebaut:
-
-- **Ein Feldname, den es nicht gibt, wird abgelehnt** und gemeldet. Es wird
-  nichts geraten und nichts stillschweigend übergangen.
-- **Gibt es zu dem Feld auch eine Option in der `ServerSettings.ini`, kommt
-  eine Warnung.** Dann gewinnt nämlich die Option, und die Zeile wäre eine
-  stille Enttäuschung.
-- **Der gesetzte Wert wird gegen den Ist-Wert geprüft**, statt nur "geschrieben"
-  zu melden.
-- **Eine geprüfte Liste liegt bei**: 184 Werte aus dem laufenden Server, jeder
-  mit seinem Auslieferungswert daneben. Wer sich daran hält, ist auf der
-  sicheren Seite. Was dort nicht steht, ist nicht verboten, aber ungeprüft -
-  und die Anleitung sagt deutlich, welche Feldsorte man in Ruhe lassen muss.
-
-### Beispiele aus dem Alltag
-
-- **Türen, die sich von selbst schließen.** SCUM hat das eingebaut und fast
-  überall abgeschaltet. Mit zwei Zeilen je Türmodell geht es an, samt Zeit bis
-  zum Zufallen. Eine fertige Vorlage für Wohnhäuser, Plattenbau, Schule,
-  Krankenhaus, Polizei, Kirche und die drei Garagentore liegt bei: 20 Modelle,
-  rund 4.600 Türen.
-- **Fahrzeuge nach dem Neustart schneller in der Welt**, über drei Bremsen im
-  Fahrzeugmanager, die hintereinanderhängen.
-- **Bunker, der bei Alarm härter reagiert.**
-- **Spielertempo**, als Faktor, ohne den Ausgangswert zu kennen.
-- **Sprengwirkung von Granaten und Fallen.**
-
-### Türmodelle herausfinden
-
-Damit die Türregel nicht Raten bleibt, gehört ein Messwerkzeug dazu:
-
-- **Alle Türklassen des Servers auflisten**, mit Stückzahl, aktuellem
-  Selbstschluss und Typ, und Weltobjekte von den Basisbau-Türen der Spieler
-  getrennt.
-- **Nach einem Textteil suchen**, dann kommt der vollständige Pfad heraus, den
-  die Konfiguration braucht.
-- **Zustand merken, im Spiel Türen aufmachen, Unterschied abfragen.** So nennt
-  die Mod genau die Türmodelle, die man angefasst hat - statt einer Liste von
-  415 Klassen, aus der niemand die richtige heraussucht.
-
-### Konsolenvariablen daneben
-
-Neben den Klassenfeldern kennt die Engine ihre eigenen Konsolenvariablen. Auch
-die lassen sich setzen, beim Serverstart oder mitten im Betrieb: Tempo, Leben
-und Schaden der Zombies sind die, nach denen am häufigsten gefragt wird.
-
-### Obergrenzen des Servers anheben
-
-Manche Werte deckelt der Server beim Start stillschweigend, etwa die Zahl der
-Rager. Der eingetragene Wert steht in der Datei, gilt aber nicht. Mit der Mod
-bleibt er stehen.
+Tempo, Leben und Schaden der Zombies hängen nicht an diesen Werten, sondern an
+eigenen Schaltern der Spiel-Engine. Die Mod stellt auch die: beim Serverstart
+oder mitten im laufenden Betrieb, ohne dass jemand etwas davon merkt.
 
 ## Server und Moderation
 
@@ -328,9 +261,10 @@ bleibt er stehen.
   Spieler öffnen: die Ingame-Uhrzeit und die Zeit bis zum Quest-Reset, jeweils
   deutsch oder englisch.
 - **Anzeigen, wer was darf**, und neu einlesen ohne Neustart.
-- **Die Werkzeuge, die den Speicher des Servers roh anfassen, sind ab Werk
-  gesperrt** und brauchen einen ausdrücklichen Schalter samt Neustart. Auf
-  einem öffentlichen Server bleibt der aus.
+- **Das Entwicklerwerkzeug ist ab Werk gesperrt.** Was tief in den Server
+  hineingreift, antwortet ohne einen ausdrücklich gesetzten Schalter mit einem
+  Hinweis statt zu laufen. Auf einem Server mit Spielern bleibt der Schalter
+  aus.
 
 ## Was von allein läuft
 
@@ -357,13 +291,11 @@ Alles hier ist ab Werk aus. Wer nichts einschaltet, merkt nichts.
   Schritten hoch und bei Sonnenaufgang genauso zurück auf den Tagwert. Den
   Tagwert muss man nicht eintragen, den holt sie sich selbst. Wie viele
   Schritte, wie weit auseinander und ab wann es losgeht, ist einstellbar.
-- **Und sie bleibt dabei.** Ein Konsolenwert wird im Spiel immer über einen
-  Spieler gesetzt, und über manchen kommt nichts an - dann bleiben die Zombies
-  bis zum Neustart stark, ohne dass irgendwo ein Fehler steht. Deshalb geht
-  jeder Schritt über einen anderen Spieler, der Endwert wird wiederholt, und
-  danach frischt die Mod ihn regelmäßig auf. Im Spielchat kann ein Admin
-  nachsehen, ob gerade Tag oder Nacht ist und welcher Wert zuletzt gesetzt
-  wurde.
+- **Und es bleibt so, wie es gesetzt wurde.** Die Mod sieht regelmäßig nach,
+  ob die Nachtwerte noch stehen, und setzt sie nach, wenn nicht. Sonst kann es
+  passieren, dass die Zombies bis zum nächsten Neustart stark bleiben, ohne dass
+  es irgendwo auffällt. Ein Admin kann im Spielchat nachsehen, ob gerade Tag
+  oder Nacht ist und was anliegt.
 - **Ausgesperrte Spieler beim Serverstart befreien**, damit der Betroffene frei
   ist, bevor er sich das nächste Mal verbindet.
 - **Updates ohne Serverhalt.** Neue Version bei laufendem Server ablegen, die

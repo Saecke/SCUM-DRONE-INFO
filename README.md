@@ -104,32 +104,26 @@ wenn niemand eingeloggt ist.
 
 ### Die Stellschrauben
 
-Der größte Bereich, und der unscheinbarste. SCUM hält seine Spielregeln in
-Klassen mit Zahlenfeldern: wie schnell ein Gefangener läuft, wie lange eine Tür
-offen steht, wie weit eine Granate wirkt, wie oft der Bunker bei Alarm
-nachlegt. Die `ServerSettings.ini` gibt davon eine Handvoll heraus. **Die Mod
-gibt den Rest heraus** - mit einer Textzeile je Wert, ohne dass es dafür eine
-neue Version der Mod braucht.
+Der größte Bereich, und der unscheinbarste. Die `ServerSettings.ini` gibt eine
+Handvoll Regler heraus. Die Mod gibt den Rest heraus: Werte, die SCUM fest
+eingebaut hat und an die sonst niemand herankommt. Je Wert eine Zeile, und es
+braucht dafür keine neue Version der Mod.
 
-- **126 Klassen** sind im laufenden Server erreichbar, viele davon mit
-  hunderten setzbaren Feldern. Kein Katalog mit zwanzig Schaltern, sondern der
-  Zugang zu dem, was das Spiel ohnehin mitbringt.
-- **Absolut oder als Faktor.** "Spieler laufen zehn Prozent schneller" ist eine
-  Zeile, ohne dass man den Ausgangswert kennt.
-- **So breit oder so eng wie nötig**: alle Objekte einer Art, nur ein
-  Türmodell, oder genau ein einzelnes Objekt. Damit lässt sich zu einer
-  allgemeinen Regel eine Ausnahme formulieren.
-- **Beim Serverstart oder mitten im Betrieb**, und mit einem Befehl alles
-  zurück auf Auslieferungszustand. Ein verdrehter Wert kostet keinen Neustart.
-- **Mit Sicherungen**, weil so ein Zugang einen Server auch zerlegen kann: ein
-  Feld, das es nicht gibt, wird abgelehnt; gewinnt statt der Zeile eine Option
-  der `ServerSettings.ini`, kommt eine Warnung; der gesetzte Wert wird
-  nachgeprüft. Und es liegt eine geprüfte Liste bei, 184 Werte mit ihren
-  Auslieferungswerten daneben.
+- **Quer durch das Spiel**: wie schnell Spieler laufen, ob Türen von selbst
+  zufallen, wie weit eine Granate wirkt, wie stark der Bunker bei Alarm
+  nachlegt, wie schnell Wasser in die Kleidung zieht, wie lange ein Autowrack
+  liegen bleibt. Über hundert Bereiche, zusammen weit über tausend Einzelwerte.
+- **Absolut oder als Anteil.** "Spieler laufen zehn Prozent schneller" lässt
+  sich hinschreiben, ohne zu wissen, welche Zahl SCUM dafür führt.
+- **So breit oder so eng, wie du willst**: alle Türen einer Bauart auf einmal,
+  oder genau ein einzelnes Tor.
+- **Beim Serverstart oder mitten im Betrieb**, und mit einem Befehl alles zurück
+  auf Auslieferungszustand. Ein verdrehter Wert kostet keinen Neustart.
+- **Du läufst nicht ins Leere.** Ein Wert, den es so nicht gibt, wird abgelehnt
+  statt stillschweigend geschluckt, und eine geprüfte Liste liegt bei.
 
-Dazu die Konsolenvariablen der Engine, die Obergrenzen, die der Server beim
-Start stillschweigend deckelt, und ein Messwerkzeug, das die Türmodelle eines
-Servers nennt, statt sie raten zu lassen.
+Dazu die Werte der Zombies, die sich live umstellen lassen, und die
+Obergrenzen, die der Server beim Start stillschweigend kappt.
 
 ### Auch im Spielchat
 
