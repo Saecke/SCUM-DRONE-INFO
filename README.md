@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>D</b>edicated <b>R</b>CON, <b>O</b>perations &amp; <b>N</b>ative <b>E</b>xecution<br>
-  Ein Source-RCON-Server für SCUM-Dedicated-Server, als native UE4SS-Mod.
+  Mehr als RCON: ein Werkzeugkasten, der im SCUM-Server selbst sitzt.
 </p>
 
 <p align="center">
@@ -16,10 +16,13 @@
   <img src="https://img.shields.io/badge/Plattform-Windows%20x64-lightgrey" alt="Plattform: Windows x64">
 </p>
 
-> **English:** D.R.O.N.E. is a Source RCON server for SCUM dedicated servers,
-> running as a native UE4SS mod inside the server process. It exposes all 233
-> in-game admin commands over standard Source RCON, no online admin required,
-> and it works on a completely empty server. Free to use, closed source.
+> **English:** D.R.O.N.E. started as a Source RCON server for SCUM dedicated
+> servers and grew into a toolbox that lives inside the server process as a
+> native UE4SS mod. Think of an admin who never sleeps, never logs out and has
+> connections nobody else has: all 233 in-game admin commands over standard
+> Source RCON, game rules the server settings don't offer, values beyond the
+> game's own limits, and logs SCUM doesn't write. It works on a completely
+> empty server, no online admin required. Free to use, closed source.
 > This repository is the public feature overview. The download itself is
 > currently limited to testers, see [Woher bekommen](#woher-bekommen).
 > The documentation is in German.
@@ -38,14 +41,21 @@ Die vollständige Funktionsliste, nach Themen sortiert: **[FUNKTIONEN.md](FUNKTI
 
 ## Was es ist
 
-Die Mod öffnet auf dem Server einen RCON-Port nach dem Source-RCON-Protokoll.
-Jeder gängige RCON-Client und jeder Bot spricht es bereits. Bestehende Bots
-laufen unverändert weiter, weil die Ausgabeformate an den etablierten
-SCUM-RCON-Lösungen geeicht sind.
+Stell dir einen Admin vor, der nie schläft, nie ausloggt und Türen kennt, die
+sonst keiner findet. Er holt dein Auto vom anderen Kartenende, lässt Zombies
+nachts schneller rennen, sagt dir, wer zuletzt am Bunker-Terminal war, und
+erlaubt deinen Squad-Mitgliedern wieder das Abreißen.
 
-Sie läuft im Serverprozess selbst, nicht als Brücke daneben. Es muss kein Admin
-online sein, und ein leerer Server ist kein Hindernis: Spawns, Events und
-Teleports funktionieren auch nachts um vier, wenn niemand eingeloggt ist.
+Das ist D.R.O.N.E. Die Mod sitzt im Serverprozess selbst und reicht dorthin,
+wo keine Serveroption hinkommt: Regeln zur Laufzeit, Werte über die Grenzen
+des Spiels hinaus, Protokolle, die SCUM nicht schreibt.
+
+Standard-RCON ist dabei nur die Eingangstür. Jeder gängige RCON-Client und
+jeder Bot spricht das Protokoll bereits, und bestehende Bots laufen unverändert
+weiter, weil die Ausgabeformate an den etablierten SCUM-RCON-Lösungen geeicht
+sind. Es muss kein Admin online sein, und ein leerer Server ist kein
+Hindernis: Spawns, Events und Teleports funktionieren auch nachts um vier,
+wenn niemand eingeloggt ist.
 
 > **Das ist eine Testfassung.** Sie läuft auf mehreren Servern im Alltag,
 > gehört aber nicht ungetestet auf einen Server mit echten Spielern.
