@@ -57,21 +57,39 @@ Teleports funktionieren auch nachts um vier, wenn niemand eingeloggt ist.
 - **Alle 233 Admin-Befehle des Spiels** über RCON, so wie ein Admin sie im
   Spielchat tippen würde. Die Befehlsliste holt sich die Mod bei jedem Start aus
   dem laufenden Spiel, sie veraltet nicht mit dem nächsten SCUM-Update.
+- **Die echte Antwort des Spiels** statt nur "abgesetzt": wie viele Leichen
+  entfernt wurden, warum ein Spawn nicht ging, was eine Abfrage ergab.
+- **Befehle für einen bestimmten Spieler**, auch solche, die im Spiel nur auf
+  den Aufrufer selbst wirken: unsterblich, Godmode, Attribute, Skills.
 - **Spielerlisten aus der Server-Datenbank**, im Format der etablierten Bots:
-  wer ist online, wer war je da, Flaggen, Squads, Fahrzeuge.
+  wer ist online, wer war je da, Flaggen, Squads, Fahrzeuge. Im Sekundentakt
+  abfragbar, ohne dass der Server darunter leidet.
 - **Chat und Ansagen** an alle oder an einen einzelnen Spieler, mit Farben und
   Einblendungen.
+- **Geld und Fame** setzen oder ändern, einzeln oder für alle Online-Spieler.
+- **Moderation**: kicken, bannen, entbannen, stummschalten, Chatverbot auf Zeit.
 - **Spawnen** von Items, Fahrzeugen, Tieren, NPCs und Events an beliebigen
   Koordinaten. Die Höhe darf fehlen, die Mod misst den Boden selbst.
-- **Fahrzeuge finden und versetzen**, zum Spieler holen oder an einen Ort setzen.
+- **Aufräumen im Umkreis**: Zombies, Tiere, Leichen, einzelne Item-Typen.
+- **Fahrzeuge finden und versetzen**, zum Spieler holen oder an einen Ort
+  setzen, auch am anderen Kartenende. Dazu die Fahrzeuge eines einzelnen
+  Spielers auflisten.
 - **Kisten finden** über Name oder ID, samt Teleport eines Spielers dorthin.
 - **Spieler befreien**, die feststecken oder wegen einer Quest nicht mehr
   einloggen können.
 - **Serverregeln zur Laufzeit ändern**, ohne Neustart. Dazu Survival-Regler,
   Strahlenzonen, Zeit und Wetter.
 - **Handelstabelle lesen**: was welcher Händler führt.
-- **Ingame-Uhrzeit und Quest-Reset abfragen**, für Bots und auf Wunsch auch
-  für Spieler im Chat.
+- **Ingame-Uhrzeit und Zeit bis zum Quest-Reset** abfragen.
+- **Generatoren um eine Flagge** auflisten, mit Füllstand.
+- **Bunker-Terminals**: wer zuletzt dort Daten geladen hat, mit Restsperre.
+
+### Auch im Spielchat
+
+- **Die Befehle der Mod** kann ein eingeloggter Admin im Chat tippen wie die
+  Spielbefehle.
+- **Für alle Spieler freigebbar**: die lesenden Befehle wie Uhrzeit und
+  Quest-Reset, wenn der Betreiber das will.
 
 ### Was von allein läuft
 
@@ -84,9 +102,11 @@ Eingriffe ins Spiel sind ab Werk aus. Wer nichts einschaltet, merkt nichts.
   steht in einer einfachen Textdatei.
 - **Generatoren, die nie leer werden.** Für Handelsposten, Com-Zone und
   Eventgelände.
-- **Nachts andere Regeln**, zum Beispiel schnellere Zombies, mit sanftem
-  Übergang bei Sonnenuntergang und -aufgang.
+- **Nachts andere Regeln**, zum Beispiel schnellere oder stärkere Zombies, mit
+  sanftem Übergang bei Sonnenuntergang und -aufgang.
 - **Obergrenzen des Spiels anheben**, etwa für mehr Rager, als SCUM erlaubt.
+- **Fahrzeuge nach dem Neustart schneller in der Welt**: bei 700 Fahrzeugen
+  rund 7 statt 23 Minuten.
 - **Türen, die sich von selbst schließen**, je Türsorte wählbar.
 - **Genähte Kleidung sieht wieder neu aus.** Normaler Verschleiß bleibt sichtbar.
 - **Abreißen in der eigenen Squad-Base ab wählbarem Rang**, statt nur für
@@ -95,9 +115,19 @@ Eingriffe ins Spiel sind ab Werk aus. Wer nichts einschaltet, merkt nichts.
   nach deren Namen. **Experimentell.**
 - **Updates ohne Serverhalt.** Neue Version bei laufendem Server ablegen, die
   Mod prüft und übernimmt sie beim nächsten Neustart.
-- **Konfigurator im Browser**, ohne Server und ohne Internet.
-- **Sessionlog** pro Serverlauf, auf Wunsch mit den Downloads an den
-  Bunker-Terminals. Dazu ein Inventar- und Leichen-Log. **Experimentell.**
+
+### Protokolle und Werkzeuge
+
+- **Sessionlog** pro Serverlauf: jeder Befehl mit Zeitstempel und Antwort, auf
+  Wunsch auch die Downloads an den Bunker-Terminals.
+- **Inventar- und Leichen-Log**: wer welchen Behälter öffnet, mit Besitzer und
+  Ort. **Experimentell.**
+- **Konfigurator im Browser**, ohne Server und ohne Internet. Jede Einstellung
+  ist dort erklärt.
+- **Selbsttest**, der alle Befehle gegen den eigenen Server durchprobiert.
+- **Kommandozeilen-Client** zum Ausprobieren von Hand.
+- **Briefing für KI-Assistenten**: eine Datei, mit der ein Assistent den Server
+  sofort steuern kann.
 
 Alles im Detail: **[FUNKTIONEN.md](FUNKTIONEN.md)**.
 
