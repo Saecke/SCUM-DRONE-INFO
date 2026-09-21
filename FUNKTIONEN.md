@@ -324,8 +324,9 @@ bleibt er stehen.
   nutzen dürfen, steht in einer einfachen Textdatei. Die Mod trägt es beim
   Serverstart ein.
 - **Befehle für alle Spieler freigeben.** Ab Werk dürfen nur Admins die
-  Befehle der Mod im Chat nutzen. Die lesenden (Uhrzeit, Quest-Reset) lassen
-  sich für jeden Spieler öffnen.
+  Befehle der Mod im Chat nutzen. Die lesenden lassen sich einzeln für jeden
+  Spieler öffnen: die Ingame-Uhrzeit und die Zeit bis zum Quest-Reset, jeweils
+  deutsch oder englisch.
 - **Anzeigen, wer was darf**, und neu einlesen ohne Neustart.
 - **Die Werkzeuge, die den Speicher des Servers roh anfassen, sind ab Werk
   gesperrt** und brauchen einen ausdrücklichen Schalter samt Neustart. Auf
@@ -352,9 +353,17 @@ Alles hier ist ab Werk aus. Wer nichts einschaltet, merkt nichts.
   Mod geht es wieder ab dem Rang, den der Betreiber wählt. Fremde bleiben
   ausgesperrt, daran ändert die Einstellung nichts.
 - **Nachts andere Regeln.** Spielwerte wie Tempo, Leben oder Schaden der
-  Zombies ab Sonnenuntergang anders setzen. Die Mod fährt sie schrittweise hoch
-  und bei Sonnenaufgang genauso zurück auf den Tagwert. Den Tagwert muss man
-  nicht eintragen, den holt sie sich selbst.
+  Zombies ab Sonnenuntergang anders setzen. Die Mod fährt sie in kleinen
+  Schritten hoch und bei Sonnenaufgang genauso zurück auf den Tagwert. Den
+  Tagwert muss man nicht eintragen, den holt sie sich selbst. Wie viele
+  Schritte, wie weit auseinander und ab wann es losgeht, ist einstellbar.
+- **Und sie bleibt dabei.** Ein Konsolenwert wird im Spiel immer über einen
+  Spieler gesetzt, und über manchen kommt nichts an - dann bleiben die Zombies
+  bis zum Neustart stark, ohne dass irgendwo ein Fehler steht. Deshalb geht
+  jeder Schritt über einen anderen Spieler, der Endwert wird wiederholt, und
+  danach frischt die Mod ihn regelmäßig auf. Im Spielchat kann ein Admin
+  nachsehen, ob gerade Tag oder Nacht ist und welcher Wert zuletzt gesetzt
+  wurde.
 - **Ausgesperrte Spieler beim Serverstart befreien**, damit der Betroffene frei
   ist, bevor er sich das nächste Mal verbindet.
 - **Updates ohne Serverhalt.** Neue Version bei laufendem Server ablegen, die
