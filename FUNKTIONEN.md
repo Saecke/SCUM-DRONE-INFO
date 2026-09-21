@@ -99,11 +99,17 @@ Stand: Version 0.6.0.
 - **Zeit, Zeitgeschwindigkeit, Wetter, Nebel** stellen.
 - **Ingame-Uhrzeit abfragen**, sekundengenau aus dem laufenden Server: eine
   Zeile für Menschen, eine für Bots. Auch während der Server noch startet.
+- **Regen, der die Felder nicht erreicht.** Ein bekanntes SCUM-Rätsel: es
+  regnet sichtbar, Kleidung wird nass, aber kein Gartenfeld bekommt Wasser. Die
+  Mod erklärt die Ursache und behebt es ohne Neustart, und sie löst es selbst
+  nie aus.
 - **Survival-Regler** zur Laufzeit: wie schnell Spieler dreckig oder nass
   werden, wie schnell Schuhe verschleißen, wie schnell Kleidung trocknet, und
   mehr. Als Faktor auf das normale Spiel, jederzeit zurücksetzbar.
 - **Strahlenzonen** einzeln oder alle auf einmal: Reichweite, Kern, Stärke,
   Verlauf. Zonen abschalten oder verstärken, ohne Neustart.
+- **Konsolenwerte des Spiels setzen**, beim Serverstart oder mitten im
+  Betrieb, etwa Tempo, Leben und Schaden der Zombies.
 - **Spielwerte setzen, für die es keine Serveroption gibt.** Türen, die sich
   von selbst schließen, sind das Paradebeispiel. Alles zur Laufzeit, alles
   zurücksetzbar.

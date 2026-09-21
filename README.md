@@ -87,8 +87,14 @@ wenn niemand eingeloggt ist.
 - **Kisten finden** über Name oder ID, samt Teleport eines Spielers dorthin.
 - **Spieler befreien**, die feststecken oder wegen einer Quest nicht mehr
   einloggen können.
-- **Serverregeln zur Laufzeit ändern**, ohne Neustart. Dazu Survival-Regler,
-  Strahlenzonen, Zeit und Wetter.
+- **Serverregeln zur Laufzeit ändern**, ohne Neustart. Dazu Strahlenzonen,
+  Zeit und Wetter.
+- **Survival-Regler**: wie schnell Spieler dreckig oder nass werden, wie schnell
+  Kleidung trocknet, wie schnell Schuhe verschleißen.
+- **Spielwerte setzen, für die es keine Serveroption gibt**, etwa Tempo, Leben
+  und Schaden der Zombies, beim Start oder mitten im Betrieb.
+- **Regen, der die Felder nicht erreicht**, ohne Neustart wieder in Gang
+  bringen.
 - **Handelstabelle lesen**: was welcher Händler führt.
 - **Ingame-Uhrzeit und Zeit bis zum Quest-Reset** abfragen.
 - **Generatoren um eine Flagge** auflisten, mit Füllstand.
