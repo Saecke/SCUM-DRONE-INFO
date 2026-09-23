@@ -22,8 +22,9 @@ Stand: Version 0.7.0.
 - **UTF-8.** Spieler mit Umlauten im Namen werden gefunden.
 - **Befehle der Mod kosten den Server nichts.** Spielerlisten dürfen im
   Sekundentakt abgefragt werden, ohne dass der Spielablauf darunter leidet.
-- **Abo-Kanal für Bots.** Statt jede Sekunde nachzufragen, meldet sich ein Bot
-  einmal an und bekommt von selbst geliefert: jede Sekunde alle Spieler mit
+- **Schnittstelle für Event-Systeme.** Livekarten, Zonen-Events,
+  Encounter-Bots, Kill-Ranglisten: statt jede Sekunde nachzufragen, meldet sich
+  das Programm einmal an und bekommt von selbst geliefert: jede Sekunde alle Spieler mit
   Position, Blickrichtung und Neigung, jede Minute Ruhm, Geld, Gold und
   Spielzeit, dazu jeden Kill an Zombies, NPCs und Tieren, sobald er passiert.
   Eine JSON-Zeile je Meldung, über dieselbe RCON-Verbindung, kein zweiter

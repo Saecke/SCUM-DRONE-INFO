@@ -101,9 +101,10 @@ wenn niemand eingeloggt ist.
 - **Ingame-Uhrzeit und Zeit bis zum Quest-Reset** abfragen.
 - **Generatoren um eine Flagge** auflisten, mit Füllstand.
 - **Bunker-Terminals**: wer zuletzt dort Daten geladen hat, mit Restsperre.
-- **Abo-Kanal für Bots**: einmal anmelden, danach liefert die Mod von selbst
-  Positionen, Blickrichtung, Ruhm, Geld, Spielzeit und Kills als JSON-Zeilen,
-  statt dass der Bot jede Sekunde nachfragt.
+- **Schnittstelle für Event-Systeme**: Livekarten, Zonen-Events,
+  Encounter-Bots und Ranglisten melden sich einmal an, danach liefert die Mod
+  von selbst Positionen, Blickrichtung, Ruhm, Geld, Spielzeit und jeden Kill
+  als JSON-Zeilen, statt dass der Bot jede Sekunde nachfragt.
 
 ### Die Stellschrauben
 
