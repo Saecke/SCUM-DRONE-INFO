@@ -147,6 +147,8 @@ Eingriffe ins Spiel sind ab Werk aus. Wer nichts einschaltet, merkt nichts.
   steht in einer einfachen Textdatei.
 - **Generatoren, die nie leer werden.** Für Handelsposten, Com-Zone und
   Eventgelände.
+- **Feuer, die nie ausgehen.** Signalfeuer, Dreibein, Feuerring und Fackeln
+  um eine Flagge brennen, bis jemand sie löscht.
 - **Nachts andere Regeln**, zum Beispiel schnellere oder stärkere Zombies, mit
   sanftem Übergang bei Sonnenuntergang und -aufgang.
 - **Obergrenzen des Spiels anheben**, etwa für mehr Rager, als SCUM erlaubt.

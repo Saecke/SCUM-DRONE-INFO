@@ -292,6 +292,11 @@ Alles hier ist ab Werk aus. Wer nichts einschaltet, merkt nichts.
   vollgetankt. Angegeben wird entweder eine Flagge samt Umkreis oder ein
   einzelner Generator; statt randvoll geht auch eine bestimmte Füllmenge, und
   der Verbrauch je Stunde lässt sich mitverstellen.
+- **Feuer, die nie ausgehen.** Für Handelsposten, Eventgelände oder das
+  Lagerfeuer im Dorf: die Feuerstellen um eine Flagge (Signalfeuer, Dreibein,
+  Feuerring, Fackeln, auf Wunsch auch Räucherofen und Öfen) werden bei jedem
+  Serverstart auf "ewig" gestellt. Sie verbrauchen nichts mehr und brennen,
+  bis jemand sie löscht.
 - **Türen, die sich von selbst schließen**, je Türsorte wählbar. Fertige
   Auswahl für Wohnhäuser, Plattenbau, Schule, Krankenhaus und Garagen.
 - **Genähte Kleidung sieht wieder neu aus.** Im Spiel behält genähte Kleidung
