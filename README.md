@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-0.6.0-brightgreen" alt="Version 0.6.0">
+  <img src="https://img.shields.io/badge/Version-0.7.0-brightgreen" alt="Version 0.7.0">
   <img src="https://img.shields.io/badge/Status-Testfassung-orange" alt="Status: Testfassung">
   <a href="LICENSE"><img src="https://img.shields.io/badge/Lizenz-free--to--use%20EULA-blue" alt="Lizenz"></a>
   <img src="https://img.shields.io/badge/Plattform-Windows%20x64-lightgrey" alt="Plattform: Windows x64">
@@ -101,6 +101,9 @@ wenn niemand eingeloggt ist.
 - **Ingame-Uhrzeit und Zeit bis zum Quest-Reset** abfragen.
 - **Generatoren um eine Flagge** auflisten, mit Füllstand.
 - **Bunker-Terminals**: wer zuletzt dort Daten geladen hat, mit Restsperre.
+- **Abo-Kanal für Bots**: einmal anmelden, danach liefert die Mod von selbst
+  Positionen, Blickrichtung, Ruhm, Geld, Spielzeit und Kills als JSON-Zeilen,
+  statt dass der Bot jede Sekunde nachfragt.
 
 ### Die Stellschrauben
 
@@ -155,6 +158,8 @@ Eingriffe ins Spiel sind ab Werk aus. Wer nichts einschaltet, merkt nichts.
   Underboss und Boss.
 - **Kisten-Sortierer**: räumt eine offene Kiste in die umstehenden Kisten,
   nach deren Namen. **Experimentell.**
+- **Eigene Sätze für die Gedanken des Spielers**, den kurzen Text links unten
+  im HUD, je Gedanke beliebig viele, zufällig wechselnd.
 - **Ausgesperrte Spieler beim Serverstart befreien**, bevor sie sich das
   nächste Mal verbinden.
 - **Updates ohne Serverhalt.** Neue Version bei laufendem Server ablegen, die
@@ -166,6 +171,8 @@ Eingriffe ins Spiel sind ab Werk aus. Wer nichts einschaltet, merkt nichts.
   Wunsch auch die Downloads an den Bunker-Terminals.
 - **Inventar- und Leichen-Log**: wer welchen Behälter öffnet, mit Besitzer und
   Ort. **Experimentell.**
+- **Kill-Log für Zombies, NPCs, Tiere, Mechs, Razors und Dropships**: wer,
+  womit, aus welcher Entfernung, wo. SCUM schreibt nur Kills an Spielern mit.
 - **Konfigurator im Browser**, ohne Server und ohne Internet. Jede Einstellung
   ist dort erklärt.
 - **Web-Panel** als Konsole im Browser: Verlauf, Vervollständigung, klickbare

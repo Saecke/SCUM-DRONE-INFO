@@ -4,7 +4,7 @@ Die vollständige Funktionsliste, nach Themen sortiert. Das hier beschreibt,
 **was** die Mod tut. Wie man sie bedient und einrichtet, steht in der
 Anleitung, die dem Paket beiliegt.
 
-Stand: Version 0.6.0.
+Stand: Version 0.7.0.
 
 ---
 
@@ -22,6 +22,12 @@ Stand: Version 0.6.0.
 - **UTF-8.** Spieler mit Umlauten im Namen werden gefunden.
 - **Befehle der Mod kosten den Server nichts.** Spielerlisten dürfen im
   Sekundentakt abgefragt werden, ohne dass der Spielablauf darunter leidet.
+- **Abo-Kanal für Bots.** Statt jede Sekunde nachzufragen, meldet sich ein Bot
+  einmal an und bekommt von selbst geliefert: jede Sekunde alle Spieler mit
+  Position, Blickrichtung und Neigung, jede Minute Ruhm, Geld, Gold und
+  Spielzeit, dazu jeden Kill an Zombies, NPCs und Tieren, sobald er passiert.
+  Eine JSON-Zeile je Meldung, über dieselbe RCON-Verbindung, kein zweiter
+  Port. Ein Fehler sieht nie aus wie ein leerer Server. Ab Werk aus.
 
 ## Spielbefehle
 
@@ -238,6 +244,11 @@ oder mitten im laufenden Betrieb, ohne dass jemand etwas davon merkt.
 - **Inventar- und Leichen-Log**: wer welchen Behälter öffnet, mit Besitzer und
   Ort; Leichen von Spielern sind mit dem Namen des Toten markiert. Nur
   mitschreiben, nichts sperren. **Experimentell**, ab Werk aus.
+- **Kill-Log für alles außer Spielern.** SCUM schreibt nur Kills an Spielern
+  mit. Die Mod schreibt den Rest: wer tötet welchen Zombie, NPC, welches Tier,
+  welchen Mech, Razor oder Dropship, womit, aus welcher Entfernung, an welcher
+  Stelle und wo. Es zählt der letzte Treffer. Als Datenquelle für Events und
+  Ranglisten. Ab Werk aus.
 - **Diagnose**: lebt die Mod, ist alles bereit, was kostet welcher Befehl. Und
   die eine Frage, die nach jedem SCUM-Update zuerst kommt: sitzen die Stellen
   im Programm noch, auf die die Mod aufsetzt.
@@ -297,6 +308,10 @@ Alles hier ist ab Werk aus. Wer nichts einschaltet, merkt nichts.
   Schritten hoch und bei Sonnenaufgang genauso zurück auf den Tagwert. Den
   Tagwert muss man nicht eintragen, den holt sie sich selbst. Wie viele
   Schritte, wie weit auseinander und ab wann es losgeht, ist einstellbar.
+- **Eigene Sätze für die Gedanken des Spielers.** Der kurze Text links unten
+  im HUD (Hunger, nasse Füße, Blutung ...) kommt vom Server und lässt sich
+  ersetzen: je Gedanke beliebig viele eigene Sätze, die Mod wechselt zufällig.
+  Änderungen ohne Neustart.
 - **Und es bleibt so, wie es gesetzt wurde.** Die Mod sieht regelmäßig nach,
   ob die Nachtwerte noch stehen, und setzt sie nach, wenn nicht. Sonst kann es
   passieren, dass die Zombies bis zum nächsten Neustart stark bleiben, ohne dass
