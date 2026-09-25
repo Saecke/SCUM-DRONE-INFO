@@ -4,7 +4,7 @@ Die vollständige Funktionsliste, nach Themen sortiert. Das hier beschreibt,
 **was** die Mod tut. Wie man sie bedient und einrichtet, steht in der
 Anleitung, die dem Paket beiliegt.
 
-Stand: Version 0.7.0.
+Stand: Version 0.8.0.
 
 ---
 
@@ -26,7 +26,8 @@ Stand: Version 0.7.0.
   Encounter-Bots, Kill-Ranglisten: statt jede Sekunde nachzufragen, meldet sich
   das Programm einmal an und bekommt von selbst geliefert: jede Sekunde alle Spieler mit
   Position, Blickrichtung und Neigung, jede Minute Ruhm, Geld, Gold und
-  Spielzeit, dazu jeden Kill an Zombies, NPCs und Tieren, sobald er passiert.
+  Spielzeit, die Uhrzeit auf der Insel samt Tempo der Uhr, dazu jeden Kill an
+  Zombies, NPCs und Tieren, sobald er passiert.
   Eine JSON-Zeile je Meldung, über dieselbe RCON-Verbindung, kein zweiter
   Port. Ein Fehler sieht nie aus wie ein leerer Server. Ab Werk aus.
 
@@ -100,6 +101,27 @@ Stand: Version 0.7.0.
   sich auch einzeln abfragen.
 - **Aufräumen im Umkreis**: Zombies, Tiere, Leichen, einzelne Item-Typen. Dazu
   Basisbau und Flaggen eines Spielers.
+- **Mechs hinstellen**, direkt vor einen Spieler oder an einen beliebigen Ort,
+  und im Umkreis wieder wegräumen. Das Spiel selbst hat für beides keinen
+  Befehl. Ein hingestellter Mech greift an, bleibt aber auf der Stelle. Auch im
+  Spielchat für Admins.
+
+## Zonen für Events
+
+- **Die Kreiswand der Events als Hinweis.** Die durchsichtige Wand aus
+  Deathmatch und Battle Royale, ohne das Event dahinter: sie zeigt nur "hier
+  beginnt was". Niemand stirbt, weder drinnen noch draußen.
+- **Sie bewegt sich.** Wandern, wachsen und schrumpfen, jeweils über eine
+  wählbare Zeit, vorher auf Wunsch kurz aufglühen. Damit lässt sich eine Zone
+  zusammenziehen wie im Battle Royale.
+- **Zwei Optiken**, die normale Event-Wand und eine kräftigere für Boxringe.
+  Dazu heller, normal oder unsichtbar.
+- **Auf Wunsch ein fester Zaun**, durch den kein Spieler kommt.
+- **Von klein bis zur ganzen Karte.**
+- **Für Bots gemacht.** Jede Zone hat einen Namen, über den ein Event- oder
+  Encounter-Bot sie setzt, bewegt, abfragt und wieder entfernt.
+- **Oder fest eingerichtet**, dann steht sie nach jedem Serverstart wieder da.
+  Änderungen ohne Neustart.
 
 ## Zeit und Wetter
 
@@ -297,7 +319,8 @@ Alles hier ist ab Werk aus. Wer nichts einschaltet, merkt nichts.
   Lagerfeuer im Dorf: die Feuerstellen um eine Flagge (Signalfeuer, Dreibein,
   Feuerring, Fackeln, auf Wunsch auch Räucherofen und Öfen) werden bei jedem
   Serverstart auf "ewig" gestellt. Sie verbrauchen nichts mehr und brennen,
-  bis jemand sie löscht.
+  bis jemand sie löscht. Gaslampen an Wand und Decke bekommen dabei einen
+  vollen, größeren Tank, der mehrere Tage reicht.
 - **Türen, die sich von selbst schließen**, je Türsorte wählbar. Fertige
   Auswahl für Wohnhäuser, Plattenbau, Schule, Krankenhaus und Garagen.
 - **Genähte Kleidung sieht wieder neu aus.** Im Spiel behält genähte Kleidung

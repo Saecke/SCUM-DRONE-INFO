@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-0.7.0-brightgreen" alt="Version 0.7.0">
+  <img src="https://img.shields.io/badge/Version-0.8.0-brightgreen" alt="Version 0.8.0">
   <img src="https://img.shields.io/badge/Status-Testfassung-orange" alt="Status: Testfassung">
   <a href="LICENSE"><img src="https://img.shields.io/badge/Lizenz-free--to--use%20EULA-blue" alt="Lizenz"></a>
   <img src="https://img.shields.io/badge/Plattform-Windows%20x64-lightgrey" alt="Plattform: Windows x64">
@@ -81,6 +81,12 @@ wenn niemand eingeloggt ist.
 - **Spawnen** von Items, Fahrzeugen, Tieren, NPCs und Events an beliebigen
   Koordinaten. Die Höhe darf fehlen, die Mod misst den Boden selbst.
 - **Aufräumen im Umkreis**: Zombies, Tiere, Leichen, einzelne Item-Typen.
+- **Mechs hinstellen und wegräumen**, vor einen Spieler oder an einen Ort. Das
+  Spiel selbst hat dafür keinen Befehl.
+- **Zonen für Events**: die durchsichtige Kreiswand aus Deathmatch und Battle
+  Royale als reiner Hinweis, niemand stirbt. Sie wandert, schrumpft, glüht auf
+  und wird auf Wunsch zum festen Zaun, gesteuert von Event-Bots oder fest
+  eingerichtet.
 - **Fahrzeuge finden und versetzen**, zum Spieler holen oder an einen Ort
   setzen, auch am anderen Kartenende. Dazu die Fahrzeuge eines einzelnen
   Spielers auflisten.
@@ -103,8 +109,8 @@ wenn niemand eingeloggt ist.
 - **Bunker-Terminals**: wer zuletzt dort Daten geladen hat, mit Restsperre.
 - **Schnittstelle für Event-Systeme**: Livekarten, Zonen-Events,
   Encounter-Bots und Ranglisten melden sich einmal an, danach liefert die Mod
-  von selbst Positionen, Blickrichtung, Ruhm, Geld, Spielzeit und jeden Kill
-  als JSON-Zeilen, statt dass der Bot jede Sekunde nachfragt.
+  von selbst Positionen, Blickrichtung, Ruhm, Geld, Spielzeit, die Inselzeit
+  und jeden Kill als JSON-Zeilen, statt dass der Bot jede Sekunde nachfragt.
 
 ### Die Stellschrauben
 
@@ -149,7 +155,8 @@ Eingriffe ins Spiel sind ab Werk aus. Wer nichts einschaltet, merkt nichts.
 - **Generatoren, die nie leer werden.** Für Handelsposten, Com-Zone und
   Eventgelände.
 - **Feuer, die nie ausgehen.** Signalfeuer, Dreibein, Feuerring und Fackeln
-  um eine Flagge brennen, bis jemand sie löscht.
+  um eine Flagge brennen, bis jemand sie löscht. Gaslampen bekommen bei jedem
+  Start einen vollen Tank.
 - **Nachts andere Regeln**, zum Beispiel schnellere oder stärkere Zombies, mit
   sanftem Übergang bei Sonnenuntergang und -aufgang.
 - **Obergrenzen des Spiels anheben**, etwa für mehr Rager, als SCUM erlaubt.
