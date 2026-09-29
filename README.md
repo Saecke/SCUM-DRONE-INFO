@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-0.8.0-brightgreen" alt="Version 0.8.0">
+  <img src="https://img.shields.io/badge/Version-0.9.0-brightgreen" alt="Version 0.9.0">
   <img src="https://img.shields.io/badge/Status-Testfassung-orange" alt="Status: Testfassung">
   <a href="LICENSE"><img src="https://img.shields.io/badge/Lizenz-free--to--use%20EULA-blue" alt="Lizenz"></a>
   <img src="https://img.shields.io/badge/Plattform-Windows%20x64-lightgrey" alt="Plattform: Windows x64">
@@ -83,13 +83,15 @@ wenn niemand eingeloggt ist.
 - **Aufräumen im Umkreis**: Zombies, Tiere, Leichen, einzelne Item-Typen.
 - **Mechs hinstellen und wegräumen**, vor einen Spieler oder an einen Ort. Das
   Spiel selbst hat dafür keinen Befehl.
+- **Gekochte Gerichte spawnen**, fertig gegart, die das Spiel selbst ablehnt.
+- **Kerzen anzünden**, die schon stehen, etwa auf einem Tisch.
 - **Zonen für Events**: die durchsichtige Kreiswand aus Deathmatch und Battle
   Royale als reiner Hinweis, niemand stirbt. Sie wandert, schrumpft, glüht auf
   und wird auf Wunsch zum festen Zaun, gesteuert von Event-Bots oder fest
   eingerichtet.
 - **Fahrzeuge finden und versetzen**, zum Spieler holen oder an einen Ort
   setzen, auch am anderen Kartenende. Dazu die Fahrzeuge eines einzelnen
-  Spielers auflisten.
+  Spielers auflisten und die volle Fahrzeugliste im Format des Spiels für Bots.
 - **Kisten finden** über Name oder ID, samt Teleport eines Spielers dorthin.
 - **Spieler befreien**, die feststecken oder wegen einer Quest nicht mehr
   einloggen können.
@@ -98,9 +100,10 @@ wenn niemand eingeloggt ist.
   Kern, Stärke, Verlauf - oder alle zusammen mit einem Faktor. Eine Zone
   abschalten, damit die Stadt neben dem Kraftwerk wieder begehbar wird, und das
   Kraftwerksgelände trotzdem gefährlich lassen.
-- **Survival-Regler**: sieben Faktoren dafür, wie hart das Überleben ist - wie
+- **Survival-Regler**: acht Faktoren dafür, wie hart das Überleben ist - wie
   schnell Spieler dreckig oder nass werden, wie schnell Kleidung trocknet, wie
-  schnell Schuhe verschleißen, wie schnell die Füße wund werden.
+  schnell Schuhe verschleißen, wie schnell die Füße wund werden, wie schnell die
+  Konstitution beim Ausruhen sinkt.
 - **Regen, der die Felder nicht erreicht**, ohne Neustart wieder in Gang
   bringen.
 - **Handelstabelle lesen**: was welcher Händler führt.
@@ -109,8 +112,8 @@ wenn niemand eingeloggt ist.
 - **Bunker-Terminals**: wer zuletzt dort Daten geladen hat, mit Restsperre.
 - **Schnittstelle für Event-Systeme**: Livekarten, Zonen-Events,
   Encounter-Bots und Ranglisten melden sich einmal an, danach liefert die Mod
-  von selbst Positionen, Blickrichtung, Ruhm, Geld, Spielzeit, die Inselzeit
-  und jeden Kill als JSON-Zeilen, statt dass der Bot jede Sekunde nachfragt.
+  von selbst Positionen, Blickrichtung, Ruhm, Geld, Spielzeit, die Inselzeit,
+  den nächsten Quest-Reset und jeden Kill als JSON-Zeilen, statt dass der Bot jede Sekunde nachfragt.
 
 ### Die Stellschrauben
 
@@ -154,9 +157,11 @@ Eingriffe ins Spiel sind ab Werk aus. Wer nichts einschaltet, merkt nichts.
   steht in einer einfachen Textdatei.
 - **Generatoren, die nie leer werden.** Für Handelsposten, Com-Zone und
   Eventgelände.
-- **Feuer, die nie ausgehen.** Signalfeuer, Dreibein, Feuerring und Fackeln
-  um eine Flagge brennen, bis jemand sie löscht. Gaslampen bekommen bei jedem
-  Start einen vollen Tank.
+- **Feuer, die nie ausgehen.** Signalfeuer, Dreibein, Feuerring, Fackeln und
+  Öfen um eine Flagge brennen, bis jemand sie löscht. Gaslampen bekommen bei
+  jedem Start einen vollen Tank.
+- **Radios an festen Orten**, zum Beispiel versteckt in der Lautsprecherbox der
+  Saloons, mit Batterie, die nie leer wird. Admins schalten im Spielchat.
 - **Nachts andere Regeln**, zum Beispiel schnellere oder stärkere Zombies, mit
   sanftem Übergang bei Sonnenuntergang und -aufgang.
 - **Obergrenzen des Spiels anheben**, etwa für mehr Rager, als SCUM erlaubt.

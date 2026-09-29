@@ -4,7 +4,7 @@ Die vollständige Funktionsliste, nach Themen sortiert. Das hier beschreibt,
 **was** die Mod tut. Wie man sie bedient und einrichtet, steht in der
 Anleitung, die dem Paket beiliegt.
 
-Stand: Version 0.8.0.
+Stand: Version 0.9.0.
 
 ---
 
@@ -26,7 +26,8 @@ Stand: Version 0.8.0.
   Encounter-Bots, Kill-Ranglisten: statt jede Sekunde nachzufragen, meldet sich
   das Programm einmal an und bekommt von selbst geliefert: jede Sekunde alle Spieler mit
   Position, Blickrichtung und Neigung, jede Minute Ruhm, Geld, Gold und
-  Spielzeit, die Uhrzeit auf der Insel samt Tempo der Uhr, dazu jeden Kill an
+  Spielzeit, die Uhrzeit auf der Insel samt Tempo der Uhr, den Zeitpunkt des
+  nächsten Quest-Resets, dazu jeden Kill an
   Zombies, NPCs und Tieren, sobald er passiert.
   Eine JSON-Zeile je Meldung, über dieselbe RCON-Verbindung, kein zweiter
   Port. Ein Fehler sieht nie aus wie ein leerer Server. Ab Werk aus.
@@ -67,6 +68,9 @@ Stand: Version 0.8.0.
 
 - **Alle Fahrzeuge auflisten** mit ID, Typ, Position und Besitzer.
 - **Die Fahrzeuge eines Spielers auflisten**, über Namen oder SteamID.
+- **Die volle Fahrzeugliste für Bots**, im Format der spieleigenen Liste, mit
+  letzter Benutzung, Beiname und Besitzer. So oft man will, und eine
+  unvollständige Antwort ist als solche erkennbar.
 - **Ein Fahrzeug zum Spieler holen.** Das kann SCUM selbst nicht, nur den
   Spieler zum Fahrzeug.
 - **Ein Fahrzeug an Koordinaten setzen.** Die Höhe wird vorher geprüft, ein
@@ -105,6 +109,11 @@ Stand: Version 0.8.0.
   und im Umkreis wieder wegräumen. Das Spiel selbst hat für beides keinen
   Befehl. Ein hingestellter Mech greift an, bleibt aber auf der Stelle. Auch im
   Spielchat für Admins.
+- **Gekochte Gerichte**: Burger, Pizza, Suppen und alles andere vom Herd, Grill
+  oder Ofen, fertig gegart. Das Spiel selbst lehnt sie beim Spawnen ab. Auch im
+  Spielchat; wer dort darf, legt der Betreiber fest.
+- **Kerzen anzünden**, die schon stehen, etwa die, die ein Bot auf einen Tisch
+  gestellt hat. Sie brennen, bis jemand sie aufhebt.
 
 ## Zonen für Events
 
@@ -165,7 +174,7 @@ Grund, warum die Stadt neben dem Kraftwerk niemand betritt.
 
 ## Survival-Regler
 
-Sieben Regler dafür, wie hart das Überleben ist. Alle zur Laufzeit, ohne
+Acht Regler dafür, wie hart das Überleben ist. Alle zur Laufzeit, ohne
 Neustart, und jederzeit komplett zurücksetzbar:
 
 | Regler | was er dreht |
@@ -177,6 +186,7 @@ Neustart, und jederzeit komplett zurücksetzbar:
 | Trocknen | wie schnell Kleidung wieder trocken wird |
 | Aufsaugen | wie schnell Wasser in die Kleidung wandert |
 | Abgeben | wie schnell sie es wieder abgibt |
+| Konstitution | wie schnell sie beim Ausruhen sinkt: Liegen, Sitzen, Stehen |
 
 - **Der Wert ist ein Faktor auf das normale Spiel.** 1 ist der
   Auslieferungszustand, 0,15 ist ein Siebtel davon, 0 ist aus. Niemand muss
@@ -317,10 +327,16 @@ Alles hier ist ab Werk aus. Wer nichts einschaltet, merkt nichts.
   der Verbrauch je Stunde lässt sich mitverstellen.
 - **Feuer, die nie ausgehen.** Für Handelsposten, Eventgelände oder das
   Lagerfeuer im Dorf: die Feuerstellen um eine Flagge (Signalfeuer, Dreibein,
-  Feuerring, Fackeln, auf Wunsch auch Räucherofen und Öfen) werden bei jedem
+  Feuerring, Fackeln, auf Wunsch auch Räucherofen, Öfen und die Feuerstelle im
+  Waldstil) werden bei jedem
   Serverstart auf "ewig" gestellt. Sie verbrauchen nichts mehr und brennen,
   bis jemand sie löscht. Gaslampen an Wand und Decke bekommen dabei einen
   vollen, größeren Tank, der mehrere Tage reicht.
+- **Radios an festen Orten.** Ein DJ-Pult spielt einen der Radiosender des
+  Spiels, mit Lautstärke und einer Batterie, die nie leer wird; aufheben kann
+  es niemand. Versteckt in einem Möbelstück, etwa der Lautsprecherbox auf der
+  Bühne der Saloons, kommt die Musik aus der Box. Admins schalten im Spielchat
+  Sender, Lautstärke, an und aus.
 - **Türen, die sich von selbst schließen**, je Türsorte wählbar. Fertige
   Auswahl für Wohnhäuser, Plattenbau, Schule, Krankenhaus und Garagen.
 - **Genähte Kleidung sieht wieder neu aus.** Im Spiel behält genähte Kleidung
