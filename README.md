@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-0.9.1-brightgreen" alt="Version 0.9.1">
+  <img src="https://img.shields.io/badge/Version-0.9.2-brightgreen" alt="Version 0.9.2">
   <img src="https://img.shields.io/badge/Status-Testfassung-orange" alt="Status: Testfassung">
   <a href="LICENSE"><img src="https://img.shields.io/badge/Lizenz-free--to--use%20EULA-blue" alt="Lizenz"></a>
   <img src="https://img.shields.io/badge/Plattform-Windows%20x64-lightgrey" alt="Plattform: Windows x64">

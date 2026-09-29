@@ -4,7 +4,7 @@ Die vollständige Funktionsliste, nach Themen sortiert. Das hier beschreibt,
 **was** die Mod tut. Wie man sie bedient und einrichtet, steht in der
 Anleitung, die dem Paket beiliegt.
 
-Stand: Version 0.9.1.
+Stand: Version 0.9.2.
 
 ---
 
